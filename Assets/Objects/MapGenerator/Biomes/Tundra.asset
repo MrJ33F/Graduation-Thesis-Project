@@ -12,7 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a77b9b48e27a6564186b47c2c4ad2f03, type: 3}
   m_Name: Tundra
   m_EditorClassIdentifier: 
-  tileArray: []
-  minimumHeight: 0
+  tileArray:
+  - {fileID: 981565755, guid: 618dcc03e04434543b9e1613b45f18d3, type: 3}
+  - {fileID: -650015979, guid: 618dcc03e04434543b9e1613b45f18d3, type: 3}
+  - {fileID: 422665860, guid: 618dcc03e04434543b9e1613b45f18d3, type: 3}
+  - {fileID: -840161906, guid: 618dcc03e04434543b9e1613b45f18d3, type: 3}
+  - {fileID: -697888633, guid: 618dcc03e04434543b9e1613b45f18d3, type: 3}
+  - {fileID: 1922666992, guid: 618dcc03e04434543b9e1613b45f18d3, type: 3}
+  - {fileID: 1182334842, guid: 618dcc03e04434543b9e1613b45f18d3, type: 3}
+  - {fileID: 460281321, guid: 618dcc03e04434543b9e1613b45f18d3, type: 3}
+  minimumHeight: 0.2
   minimumMoisture: 0
   minimumHeat: 0

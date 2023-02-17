@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a77b9b48e27a6564186b47c2c4ad2f03, type: 3}
   m_Name: Ocean
   m_EditorClassIdentifier: 
-  tileArray: []
+  tileArray:
+  - {fileID: 1304633566, guid: fa7b33f5a19a10d43987f8a042560f94, type: 3}
+  - {fileID: 292915085, guid: fa7b33f5a19a10d43987f8a042560f94, type: 3}
+  - {fileID: 505986815, guid: fa7b33f5a19a10d43987f8a042560f94, type: 3}
+  - {fileID: 2044160251, guid: fa7b33f5a19a10d43987f8a042560f94, type: 3}
+  - {fileID: -2015375068, guid: fa7b33f5a19a10d43987f8a042560f94, type: 3}
   minimumHeight: 0
   minimumMoisture: 0
   minimumHeat: 0

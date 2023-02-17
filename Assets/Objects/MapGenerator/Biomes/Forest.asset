@@ -12,7 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a77b9b48e27a6564186b47c2c4ad2f03, type: 3}
   m_Name: Forest
   m_EditorClassIdentifier: 
-  tileArray: []
-  minimumHeight: 0
-  minimumMoisture: 0
-  minimumHeat: 0
+  tileArray:
+  - {fileID: 946368713, guid: fe7021cdbbc001e44b2bc6c6ef817b49, type: 3}
+  - {fileID: -773442164, guid: fe7021cdbbc001e44b2bc6c6ef817b49, type: 3}
+  - {fileID: 1832700603, guid: fe7021cdbbc001e44b2bc6c6ef817b49, type: 3}
+  - {fileID: -1625746557, guid: fe7021cdbbc001e44b2bc6c6ef817b49, type: 3}
+  - {fileID: 1887959592, guid: fe7021cdbbc001e44b2bc6c6ef817b49, type: 3}
+  - {fileID: -418583851, guid: fe7021cdbbc001e44b2bc6c6ef817b49, type: 3}
+  minimumHeight: 0.2
+  minimumMoisture: 0.4
+  minimumHeat: 0.4
