@@ -17,8 +17,8 @@ public class BiomesDiagramContainer : IDataModelValidation{
         set{biomes[i*MAX_Y_LAYER_COUNT + j] = value;}
     }
 
-    public DataModels.BiomeModel[,] ToModel(){
-        
+    public IEnumerable<ValidationDataError> Validate()
+    {
+        throw new NotImplementedException();
     }
-
 }
