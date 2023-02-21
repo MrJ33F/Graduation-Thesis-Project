@@ -5,7 +5,7 @@ using UnityEngine;
 public class MapGenerator : MonoBehaviour
 {
     [Header("Main Configurations")]
-    public MapBiomeGenerator[] biomes;
+    public MapBiomeGenerator[] Biomes;
     public GameObject tilePrefab;
 
 
@@ -53,48 +53,48 @@ public class MapGenerator : MonoBehaviour
     }
 
     MapBiomeGenerator GetBiome(float heightPoint, float moisturePoint, float heatPoint) {
-        List<BiomeData> biomeData = new List<BiomeData>();
+        List<BiomeData> BiomeData = new List<BiomeData>();
 
 
-        foreach(MapBiomeGenerator biome in biomes){
-            if(biome.BiomeMatchCondition(heightPoint, moisturePoint, heatPoint)){
-                biomeData.Add(new BiomeData(biome));
+        foreach(MapBiomeGenerator Biome in Biomes){
+            if(Biome.BiomeMatchCondition(heightPoint, moisturePoint, heatPoint)){
+                BiomeData.Add(new BiomeData(Biome));
             }
         }
 
         float currentValue = 0.0f;
-        MapBiomeGenerator biomeOutput = null;
+        MapBiomeGenerator BiomeOutput = null;
 
-        foreach(BiomeData bData in biomeData){
-            if(biomeOutput == null){
+        foreach(BiomeData bData in BiomeData){
+            if(BiomeOutput == null){
 
-                biomeOutput = bData.biome;
+                BiomeOutput = bData.Biome;
                 currentValue = bData.GetDifferenceValue(heightPoint, moisturePoint, heatPoint);
             }
             else{
                 if(bData.GetDifferenceValue(heightPoint, moisturePoint, heatPoint) < currentValue){
-                    biomeOutput = bData.biome;
+                    BiomeOutput = bData.Biome;
                     currentValue = bData.GetDifferenceValue(heightPoint, moisturePoint, heatPoint);
 
                 }
             }
         }
-        if(biomeOutput == null) biomeOutput = biomes[0];
+        if(BiomeOutput == null) BiomeOutput = Biomes[0];
 
-        return biomeOutput;
+        return BiomeOutput;
     }
 }
 
 public class BiomeData{
-    public MapBiomeGenerator biome;
+    public MapBiomeGenerator Biome;
 
     public BiomeData(MapBiomeGenerator preset){
-        biome = preset;
+        Biome = preset;
     }
 
     public float GetDifferenceValue(float heightPoint, float moisturePoint, float heatPoint) {
-        return (heightPoint - biome.minimumHeight) +
-               (moisturePoint - biome.minimumMoisture) +
-               (heatPoint - biome.minimumHeat);
+        return (heightPoint - Biome.minimumHeight) +
+               (moisturePoint - Biome.minimumMoisture) +
+               (heatPoint - Biome.minimumHeat);
     }
 }

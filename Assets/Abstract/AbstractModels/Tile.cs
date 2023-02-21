@@ -5,23 +5,23 @@ namespace MapGenerator.BaseModels
     /// </summary>
     public class Tile
     {
-        public BiomModel Biom { get; set; }
-        public BiomModel WaterBiom { get; set; }
+        public BiomeModel Biome { get; set; }
+        public BiomeModel WaterBiome { get; set; }
 
-        public bool HasWaterBiom
+        public bool HasWaterBiome
         {
-            get { return WaterBiom != null; }
+            get { return WaterBiome != null; }
         }
         public float WaterDeepness { get; set; }
         public float Temperature { get; set; }
         public float Height { get; set; }
 
-        public BiomModel GetBiomModel()
+        public BiomeModel GetBiomeModel()
         {
-            if (HasWaterBiom)
-                return WaterBiom;
+            if (HasWaterBiome)
+                return WaterBiome;
             else
-                return Biom;
+                return Biome;
         }
     }
 }

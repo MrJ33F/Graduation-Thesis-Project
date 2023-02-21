@@ -1,5 +1,4 @@
 namespace MapGenerator.BaseModels
-
 {
     public class PriorityModel<T>
     {

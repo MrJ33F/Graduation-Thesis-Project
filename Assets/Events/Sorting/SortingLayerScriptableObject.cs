@@ -7,7 +7,7 @@ using UnityEngine;
 namespace Sorting
 {
     [CreateAssetMenu(menuName = "Restore Sorting Layer")]
-    public class SortingLayerRestoreScriptableObject : ScriptableObject
+    public class SortingLayerScriptableObject : ScriptableObject
     {
         public string prefabsPath = "Assets/Prefabs";
 

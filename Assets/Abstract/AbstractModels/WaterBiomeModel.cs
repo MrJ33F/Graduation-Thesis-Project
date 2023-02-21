@@ -1,8 +1,8 @@
 namespace MapGenerator.BaseModels
 {
-    public class WaterBiomModel
+    public class WaterBiomeModel
     {
-        public BiomModel Biom { get; set; }
+        public BiomeModel Biome { get; set; }
         public float WaterThresholding { get; set; }
     }
 }
