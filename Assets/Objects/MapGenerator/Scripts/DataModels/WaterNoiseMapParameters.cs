@@ -1,5 +1,4 @@
 using System;
-using MapGenerator.DataModels;
 using UnityEngine;
 
 namespace MapGenerator.Models
