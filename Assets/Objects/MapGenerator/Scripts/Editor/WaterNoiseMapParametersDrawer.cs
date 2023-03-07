@@ -1,6 +1,8 @@
 using UnityEditor;
 using UnityEngine;
 
+using MapGenerator.Models;
+
 namespace MapGenerator.UnityPort
 {
     [CustomPropertyDrawer(typeof(WaterNoiseMapParameters))]

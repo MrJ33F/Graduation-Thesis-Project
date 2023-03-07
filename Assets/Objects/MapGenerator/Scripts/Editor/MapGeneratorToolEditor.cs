@@ -1,7 +1,11 @@
 using UnityEngine;
 using UnityEditor;
 
-namespace MapGenerator.Editor
+using MapGenerator.Generator;
+using MapGenerator.Models;
+using MapGenerator.Graphical;
+
+namespace MapGenerator
 {
     [CustomEditor(typeof(MapGeneratorTool))]
     public class MapGeneratorToolEditor : Editor
@@ -105,7 +109,7 @@ namespace MapGenerator.Editor
                     else if (i == biomesDiagram.heightLayerCount)
                         GUILayout.Label($"Temperatura {j + 1}");
                     else
-                        biomesDiagram[i,j] = (Biom)EditorGUILayout.ObjectField(biomesDiagram[i, j], typeof(Biom), true);
+                        biomesDiagram[i,j] = (Biome)EditorGUILayout.ObjectField(biomesDiagram[i, j], typeof(Biome), true);
                 }
                 EditorGUILayout.EndVertical();
             }

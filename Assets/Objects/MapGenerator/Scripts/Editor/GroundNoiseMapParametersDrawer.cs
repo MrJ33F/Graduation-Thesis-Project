@@ -1,7 +1,9 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace MapGenerator.Editor
+using MapGenerator.Models;
+
+namespace MapGenerator
 {
     [CustomPropertyDrawer(typeof(GroundNoiseMapParameters))]
     public class GroundNoiseMapParametersDrawer : PropertyDrawer

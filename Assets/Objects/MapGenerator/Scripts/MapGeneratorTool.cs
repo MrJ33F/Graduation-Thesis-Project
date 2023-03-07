@@ -69,7 +69,7 @@ namespace MapGenerator.Generator
         {
             Clear();
 
-            Generator.Generator generator = new Generator.Generator(width, height, seed, waterLayers.ToModel(), biomesDiagram.ToModel(),
+            Generator generator = new Generator(width, height, seed, waterLayers.ToModel(), biomesDiagram.ToModel(),
                 waterNoiseMapParameters.ToModel(), heightNoiseMapParameters.ToModel(), temperatureNoiseMapParameters.ToModel());
 
             generator.Generate();

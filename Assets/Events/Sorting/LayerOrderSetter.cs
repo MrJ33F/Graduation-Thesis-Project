@@ -1,12 +1,13 @@
 using UnityEngine;
-//using MapGenerator;
+using MapGenerator.Generator;
 
 public class LayerOrderSetter : MonoBehaviour{
     public SpriteRenderer spriteRenderer;
-    //private MapGenerator mapGenerator;
+    private MapGeneratorTool mapGeneratorTool;
 
-    private void Start() {
-        MapGenerator = FindObjectOfType<MapGenerator<MapGenerator>();
-        spriteRenderer.sortingOrder = (int)(MapGenerator.height - transform.position.z);
+    void Start()
+    {
+        mapGeneratorTool = FindObjectOfType<MapGeneratorTool>();
+        spriteRenderer.sortingOrder = (int)(mapGeneratorTool.height - transform.position.z);
     }
 }

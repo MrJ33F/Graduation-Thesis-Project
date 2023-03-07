@@ -1,6 +1,6 @@
 using System;
 
-namespace MapGenerator
+namespace MapGenerator.BaseModels
 {
     public struct Vector2Int
     {
